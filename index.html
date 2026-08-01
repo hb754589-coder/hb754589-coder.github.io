@@ -8,28 +8,29 @@
 <style>
 
 body{
-font-family: 'Arial', sans-serif;
+font-family:Arial,sans-serif;
 margin:0;
-background:#f5f7fb;
+background:#f3f7f4;
 color:#222;
 }
 
 .container{
-max-width:420px;
+max-width:430px;
 margin:auto;
 padding:15px;
 }
 
 .card{
 background:white;
+padding:22px;
 border-radius:25px;
-padding:25px;
-margin-bottom:15px;
+margin-bottom:18px;
 box-shadow:0 8px 25px rgba(0,0,0,.12);
-text-align:center;
 }
 
 .profile{
+display:block;
+margin:auto;
 width:140px;
 height:140px;
 border-radius:50%;
@@ -38,67 +39,49 @@ border:5px solid #16a34a;
 }
 
 h1{
-margin:15px 0 5px;
-font-size:28px;
+text-align:center;
+margin-bottom:5px;
 }
 
 .brand{
+text-align:center;
 color:#16a34a;
-font-size:20px;
+font-size:22px;
 font-weight:bold;
 }
 
 h2{
-font-size:20px;
 color:#16a34a;
+text-align:center;
 }
 
 p{
 line-height:1.6;
 }
 
-button{
-width:100%;
-padding:14px;
-margin:7px 0;
-border:none;
+.btn{
+display:block;
+text-align:center;
+padding:13px;
 border-radius:15px;
-font-size:16px;
 color:white;
+text-decoration:none;
+margin:8px 0;
 font-weight:bold;
 }
 
-.call{
-background:#16a34a;
-}
+.call{background:#16a34a;}
+.whatsapp{background:#25D366;}
+.facebook{background:#1877f2;}
+.email{background:#555;}
+.map{background:#ea4335;}
+.order{background:#f59e0b;}
 
-.whatsapp{
-background:#25D366;
-}
-
-.facebook{
-background:#1877f2;
-}
-
-.email{
-background:#555;
-}
-
-.map{
-background:#ea4335;
-}
-
-.pay{
-background:#7c3aed;
-}
-
-.order{
-background:#f59e0b;
-}
-
-ul{
-text-align:left;
-line-height:2;
+.product{
+background:#f8fafc;
+padding:12px;
+border-radius:15px;
+margin:10px 0;
 }
 
 </style>
@@ -112,7 +95,7 @@ line-height:2;
 
 <div class="card">
 
-<img class="profile" src="IMG_5437.jpeg">
+<img src="IMG_5437.jpeg" class="profile">
 
 <h1>HASAN MAHBUB</h1>
 
@@ -120,36 +103,28 @@ line-height:2;
 🌿 Gram Bangla Foods
 </div>
 
-<p>
+<p style="text-align:center;">
 নিরাপদ ও মানসম্মত খাদ্যপণ্যের বিশ্বস্ত ঠিকানা।
 </p>
 
 
-<a href="tel:+8801742357314">
-<button class="call">
+<a class="btn call" href="tel:+8801742357314">
 📞 Call Now
-</button>
 </a>
 
 
-<a href="https://wa.me/8801742357314?text=আসসালামু%20আলাইকুম।%20আমি%20Gram%20Bangla%20Foods%20থেকে%20পণ্য%20অর্ডার%20করতে%20চাই।%0A%0A📦%20পণ্যের%20নাম:%0A⚖️%20পরিমাণ:%0A📍%20ঠিকানা:">
-<button class="whatsapp">
-💬 WhatsApp Order
-</button>
+<a class="btn whatsapp" href="https://wa.me/8801742357314">
+💬 WhatsApp
 </a>
 
 
-<a href="https://www.facebook.com/share/19QxyDnEiM/?mibextid=wwXIfr">
-<button class="facebook">
+<a class="btn facebook" href="https://www.facebook.com/share/19QxyDnEiM/?mibextid=wwXIfr">
 📘 Facebook
-</button>
 </a>
 
 
-<a href="mailto:hb754589@gmail.com">
-<button class="email">
+<a class="btn email" href="mailto:hb754589@gmail.com">
 ✉ Email
-</button>
 </a>
 
 </div>
@@ -162,10 +137,11 @@ line-height:2;
 
 <p>
 Gram Bangla Foods আপনাকে স্বাগতম।
-আমরা তাজা ও মানসম্মত খাদ্যপণ্য সরবরাহ করি।
+আমরা তাজা, নিরাপদ ও মানসম্মত খাদ্যপণ্য সরবরাহ করি।
 </p>
 
 </div>
+
 
 
 
@@ -173,36 +149,80 @@ Gram Bangla Foods আপনাকে স্বাগতম।
 
 <h2>📦 আমাদের পণ্য</h2>
 
-<ul>
-<li>🥭 আম্রপালি আম</li>
-<li>🍍 আনারস</li>
-<li>🫙 সরিষার তেল</li>
-<li>🌾 হলুদের গুঁড়া</li>
-<li>🌶️ মরিচের গুঁড়া</li>
-<li>🌿 জিরা গুঁড়া</li>
-</ul>
+
+<div class="product">
+🥭 <b>আম্রপালি আম</b>
+
+<a class="btn order"
+href="https://wa.me/8801742357314?text=আসসালামু%20আলাইকুম।%0Aআমি%20Gram%20Bangla%20Foods%20থেকে%20আম্রপালি%20আম%20নিতে%20চাই।%0A%0A⚖️%20পরিমাণ:%0A📍%20ঠিকানা:%0A📞%20মোবাইল%20নম্বর:">
+🛒 আম অর্ডার করুন
+</a>
 
 </div>
 
 
 
-<div class="card">
+<div class="product">
+🍍 <b>আনারস</b>
 
-<h2>📰 পণ্যের খবর</h2>
-
-<p>
-🥭 আমের মৌসুমে অর্ডার নেওয়া হচ্ছে।
-</p>
-
-<p>
-🍍 তাজা আনারস পাওয়া যাচ্ছে।
-</p>
-
-<p>
-🌿 নতুন মসলা পণ্য প্রস্তুত আছে।
-</p>
+<a class="btn order"
+href="https://wa.me/8801742357314?text=আসসালামু%20আলাইকুম।%0Aআমি%20Gram%20Bangla%20Foods%20থেকে%20আনারস%20নিতে%20চাই।%0A%0A⚖️%20পরিমাণ:%0A📍%20ঠিকানা:%0A📞%20মোবাইল%20নম্বর:">
+🛒 আনারস অর্ডার করুন
+</a>
 
 </div>
+
+
+
+<div class="product">
+🫙 <b>সরিষার তেল</b>
+
+<a class="btn order"
+href="https://wa.me/8801742357314?text=আমি%20Gram%20Bangla%20Foods%20থেকে%20সরিষার%20তেল%20নিতে%20চাই।%20পরিমাণ%20ও%20ঠিকানা%20দিচ্ছি।">
+🛒 অর্ডার করুন
+</a>
+
+</div>
+
+
+
+<div class="product">
+🌾 <b>হলুদের গুঁড়া</b>
+
+<a class="btn order"
+href="https://wa.me/8801742357314?text=আমি%20Gram%20Bangla%20Foods%20থেকে%20হলুদের%20গুঁড়া%20নিতে%20চাই।">
+🛒 অর্ডার করুন
+</a>
+
+</div>
+
+
+
+<div class="product">
+🌶️ <b>মরিচের গুঁড়া</b>
+
+<a class="btn order"
+href="https://wa.me/8801742357314?text=আমি%20Gram%20Bangla%20Foods%20থেকে%20মরিচের%20গুঁড়া%20নিতে%20চাই।">
+🛒 অর্ডার করুন
+</a>
+
+</div>
+
+
+
+<div class="product">
+🌿 <b>জিরা গুঁড়া</b>
+
+<a class="btn order"
+href="https://wa.me/8801742357314?text=আমি%20Gram%20Bangla%20Foods%20থেকে%20জিরা%20গুঁড়া%20নিতে%20চাই।">
+🛒 অর্ডার করুন
+</a>
+
+</div>
+
+
+</div>
+
 
 
 
@@ -211,18 +231,15 @@ Gram Bangla Foods আপনাকে স্বাগতম।
 <h2>💳 পেমেন্ট</h2>
 
 <p>
-bKash: +8801742357314
+বিকাশ: +8801742357314
 </p>
 
 <p>
-Nagad: +8801742357314
+নগদ: +8801742357314
 </p>
 
-<button class="pay">
-💳 Payment Info
-</button>
-
 </div>
+
 
 
 
@@ -235,13 +252,34 @@ Madhupur, Tangail, Bangladesh
 </p>
 
 
-<a href="https://maps.app.goo.gl/MVy1RPPmUB23WFhq5?g_st=ac">
-<button class="map">
+<a class="btn map"
+href="https://maps.app.goo.gl/MVy1RPPmUB23WFhq5?g_st=ac">
 📍 Google Maps
-</button>
 </a>
 
 </div>
+
+
+
+
+<div class="card">
+
+<h2>📰 পণ্যের খবর</h2>
+
+<p>
+🥭 আমের অর্ডার নেওয়া হচ্ছে।
+</p>
+
+<p>
+🍍 তাজা আনারস পাওয়া যাচ্ছে।
+</p>
+
+<p>
+🌿 নতুন মসলা পণ্য প্রস্তুত আছে।
+</p>
+
+</div>
+
 
 
 
